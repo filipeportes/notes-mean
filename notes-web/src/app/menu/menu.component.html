@@ -1,0 +1,19 @@
+<header>
+  <nav class="navbar-inverse">
+    <ul class="nav nav-pills">
+      <li routerLinkActive="active" *ngIf="!isAuthenticated()">
+        <a class="nav-item" routerLink="/signin">Sign-In</a>
+      </li>
+      <li routerLinkActive="active" *ngIf="!isAuthenticated()">
+        <a class="nav-item" routerLink="/signup">Sign-Up</a>
+      </li>
+      <li routerLinkActive="active" *ngIf="isAuthenticated()">
+        <a class="nav-item" routerLink="/notes">Notes</a>
+      </li>
+      <li>
+        <a *ngIf="isAuthenticated()" (click)="logOut()"
+           class="nav-item" style="cursor: pointer;" routerLink="/signout">Logout</a>
+      </li>
+    </ul>
+  </nav>
+</header>

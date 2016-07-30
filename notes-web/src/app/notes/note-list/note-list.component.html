@@ -1,0 +1,7 @@
+<div class="container">
+
+  <h1>My Notes <a class="btn btn-success pull-right" [routerLink]="['new']">Add Note</a></h1>
+
+  <note-detail (removeNote)="onRemove($event)" [note]="note" *ngFor="let note of notes"></note-detail>
+
+</div>
