@@ -1,7 +1,7 @@
 # notes-mean
 
 * [install node](https://nodejs.org/en/download/current/)
- * notes-web: angular2 created with [angular-cli](https://cli.angular.io/)
+* notes-web: angular2 created with [angular-cli](https://cli.angular.io/)
  * npm install angular-cli -g
  * navigate to notes-web folder 
  * npm install 
