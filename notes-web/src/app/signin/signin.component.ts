@@ -19,9 +19,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit():void {
     this.authService.signIn(this.user).subscribe(
-      currentUser => {
-        this.router.navigate(['/notes']);
-      },
+      currentUser => this.router.navigate(['/notes']),
       error => console.error(error)
     );
   }

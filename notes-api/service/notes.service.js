@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var Note = require('../model/note');
+const mongoose = require('mongoose');
+const Note = require('../model/note');
 
 class NoteService {
 

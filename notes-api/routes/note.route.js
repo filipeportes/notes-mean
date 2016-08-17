@@ -49,7 +49,7 @@ function create(req, res, next) {
         title: req.body.title,
         description: req.body.description,
         userEmail: req.userEmail
-    })
+    });
 
     NotesService.create(note).then(
         note => res.status(201).json({
@@ -65,7 +65,7 @@ function update(req, res, next) {
         title: req.body.title,
         description: req.body.description,
         userEmail: req.userEmail
-    })
+    });
 
     NotesService.update(note).then(
         note => res.status(201).json(note), error

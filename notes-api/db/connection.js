@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 class Connection {
     connect() {
-        mongoose.connect('mongodb://mongodb://mean:mean@ds033015.mlab.com:33015/filipenotesweb',
+        mongoose.connect('mongodb://mean:mean@ds033015.mlab.com:33015/filipenotesweb',
             err => {
                 if (err) {
                     throw err;
